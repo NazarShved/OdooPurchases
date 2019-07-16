@@ -4,11 +4,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Config {
+public class ConfigReader {
     private static Properties p = new Properties();
 
     static{
-        String path = "configuration.properties";
+        String path = "config.properties";
         try {
             FileInputStream file = new FileInputStream(path);
             p.load(file);
