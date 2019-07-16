@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public  class Driver extends DriverSetup {
 
-        private Driver(){
+        public Driver(){
 
         }
 
@@ -73,9 +75,19 @@ public  class Driver extends DriverSetup {
             return $(By.cssSelector(cssSelector));
         }
 
+        //Returns a list of elements found by the inputed By
+        public List<WebElement> $s(By by){
+            return assertThat(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+        }
+
+        //Returns a list of elements by css selector inputed as a string
+        public List<WebElement> $s(String cssSelector){
+            return $s(By.cssSelector(cssSelector));
+        }
+
         //Makes a WebDriverWait return a WebElement dont use it
         private static  <V> V assertThat(Function<? super WebDriver, V> condition){
             return (new WebDriverWait(getDriver(), 5)).until(condition);
         }
-
+// What the heck
 }
