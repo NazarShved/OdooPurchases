@@ -17,8 +17,8 @@ public  class Driver extends DriverSetup {
 
         //Loggs in when on ligin page
         public static void login(){
-            Driver.$("#login").sendKeys(Config.getProperty("user1Login"));
-            Driver.$("#password").sendKeys(Config.getProperty("user1Pswd"));
+            Driver.$("#login").sendKeys(ConfigReader.getProperty("user1Login"));
+            Driver.$("#password").sendKeys(ConfigReader.getProperty("user1Pswd"));
             Driver.$(".btn.btn-primary").click();
         }
 
@@ -29,7 +29,7 @@ public  class Driver extends DriverSetup {
 
         //Navigates to our project Website
         public static void visit(){
-            open(Config.getProperty("url"));
+            open(ConfigReader.getProperty("url"));
         }
 
         //opens website logsin, and navigates to purchases module

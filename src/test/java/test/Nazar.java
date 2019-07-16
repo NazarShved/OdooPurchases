@@ -3,7 +3,6 @@ package test;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.Config;
 import utilities.Driver;
 
 public class Nazar extends BaseTest{
