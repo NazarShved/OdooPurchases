@@ -60,7 +60,7 @@ public abstract class ConciseAPI{
 //
         //Takes By and returns a web element $(By.id("q"));
         public  WebElement $(By by){
-            return assertThat(ExpectedConditions.visibilityOfElementLocated(by));
+            return assertThat(ExpectedConditions.elementToBeClickable(by));
         }
 
         //Takes a String css selector and returns a WebElement $("cssSelector").click();
