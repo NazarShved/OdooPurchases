@@ -1,5 +1,6 @@
 package utilities;
 
+import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+
+import static utilities.Conditions.*;
 
 public abstract class ConciseAPI{
 
@@ -62,7 +65,7 @@ public abstract class ConciseAPI{
 
         //Takes By and returns a web element $(By.id("q"));
         public  WebElement $(By by){
-            return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            return assertThat(ExpectedConditions.visibilityOfElementLocated(by));
         }
 
         //Takes a String css selector and returns a WebElement $("cssSelector").click();
@@ -72,7 +75,7 @@ public abstract class ConciseAPI{
 
         //Returns a list of elements found by the inputed By
         public  List<WebElement> $$(By by){
-            return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+            return assertThat(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
         }
 
         //Returns a list of elements by css selector inputed as a string
@@ -80,9 +83,13 @@ public abstract class ConciseAPI{
             return $$(By.cssSelector(cssSelector));
         }
 
-        //
-//        private static  <V> V assertThat(Function<? super WebDriver, V> condition){
-//            return wait.until(condition);
-//        }
+        WebElement $get(By listLocator, int index){
+        return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
+        }
+
+
+        public  <V> V assertThat(Function<? super WebDriver, V> condition){
+            return wait.until(condition);
+        }
 
 }
