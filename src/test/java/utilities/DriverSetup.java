@@ -18,7 +18,7 @@ public class DriverSetup {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            switch (ConciseAPI.config.getProperty("browser")) {
+            switch (ConsAPI.config.getProperty("browser")) {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
