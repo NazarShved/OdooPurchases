@@ -9,85 +9,89 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public  class Driver extends DriverSetup {
+import static utilities.Conditions.*;
 
-        public Driver(){
+public abstract class ConciseAPI{
 
-        }
+        public abstract WebDriver getWebDriver();
+        public WebDriverWait wait = new WebDriverWait(getWebDriver(), 7);
+        public static ConfigReader config = new ConfigReader("config.properties");
 
         //Loggs in when on ligin page
-        public static void login(){
-            Driver.$("#login").sendKeys(ConfigReader.getProperty("user1Login"));
-            Driver.$("#password").sendKeys(ConfigReader.getProperty("user1Pswd"));
-            Driver.$(".btn.btn-primary").click();
+        public void login(){
+           $("#login").sendKeys(config.getProperty("user1Login"));
+           $("#password").sendKeys(config.getProperty("user1Pswd"));
+           $(".btn.btn-primary").click();
         }
 
         //opens an inputed website
-        public static void open(String url){
-            getDriver().get(url);
+        public void open(String url){
+            getWebDriver().get(url);
         }
 
         //Navigates to our project Website
-        public static void visit(){
-            open(ConfigReader.getProperty("url"));
+        public void visit(){
+            open(config.getProperty("url"));
         }
-
-        //opens website logsin, and navigates to purchases module
-        public static void goToPurchases(){
-            visit();
-            login();
-            $x("(//span[@class = 'oe_menu_text'])[9]").click();
-        }
-
-
 
         //same as previous only for Xpath
-        public static By byXpath(String xPath){
+        public  By byXpath(String xPath){
             return By.xpath(xPath);
         }
 
         //Takes By and returns a web element $(By.id("q"));
-        public static WebElement $x(By by){
-            return assertThat(ExpectedConditions.visibilityOfElementLocated(by));
+        public  WebElement $x(By by){
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         }
 
         //Takes a String Xpath and returns a WebElement found by that Xpath $x("//*[@class = 'a']").click();
-        public static WebElement $x(String xPath){
+        public  WebElement $x(String xPath){
             return $(By.xpath(xPath));
         }
 
         //Takes string css selector returns By.cssSelector(Css)
-        public static By byCss(String cssSelector){
+        public  By byCss(String cssSelector){
             return By.cssSelector(cssSelector);
         }
 
 //       // public static By by(String cssSelector){
 //            return byCss(cssSelector);
 //        }
-
+//
         //Takes By and returns a web element $(By.id("q"));
-        public static WebElement $(By by){
+        public  WebElement $(By by){
             return assertThat(ExpectedConditions.visibilityOfElementLocated(by));
         }
 
         //Takes a String css selector and returns a WebElement $("cssSelector").click();
-        public static WebElement $(String cssSelector){
+        public  WebElement $(String cssSelector){
             return $(By.cssSelector(cssSelector));
         }
 
         //Returns a list of elements found by the inputed By
-        public List<WebElement> $s(By by){
+        public  List<WebElement> $$(By by){
             return assertThat(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
         }
 
         //Returns a list of elements by css selector inputed as a string
-        public List<WebElement> $s(String cssSelector){
-            return $s(By.cssSelector(cssSelector));
+        public List<WebElement> $$(String cssSelector){
+            return $$(By.cssSelector(cssSelector));
         }
 
+<<<<<<< HEAD:src/test/java/utilities/Driver.java
         //Makes a WebDriverWait return a WebElement dont use it
         private static  <V> V assertThat(Function<? super WebDriver, V> condition){
             return (new WebDriverWait(getDriver(), 7)).until(condition);
+=======
+        public WebElement $get(By listLocator, int index){
+        return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
+>>>>>>> origin/master:src/test/java/utilities/ConciseAPI.java
         }
-// What the heck
+
+
+        // can Use it instead of assert but you have to give parametr ExpectedConditions.(find the mathching condition);
+        public  <V> V assertThat(Function<? super WebDriver, V> condition){
+            return wait.until(condition);
+        }
+
 }

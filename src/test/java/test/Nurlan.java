@@ -40,7 +40,7 @@ public class Nurlan extends BaseTest {
 
         $x("(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[3]").click();
 
-        List<WebElement> filters = $s(By.xpath("//ul[@class='dropdown-menu o_filters_menu']//a"));
+        List<WebElement> filters = $$(By.xpath("//ul[@class='dropdown-menu o_filters_menu']//a"));
 
         System.out.println(filters);
         System.out.println(filters.size());
