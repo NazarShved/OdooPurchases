@@ -14,7 +14,7 @@ import static utilities.Conditions.*;
 public abstract class ConciseAPI{
 
         public abstract WebDriver getWebDriver();
-        public WebDriverWait wait = new WebDriverWait(getWebDriver(), 5);
+        public WebDriverWait wait = new WebDriverWait(getWebDriver(), 7);
         public static ConfigReader config = new ConfigReader("config.properties");
 
         //Loggs in when on ligin page
@@ -33,11 +33,6 @@ public abstract class ConciseAPI{
         public void visit(){
             open(config.getProperty("url"));
         }
-
-        //opens website logsin, and navigates to purchases module
-
-
-
 
         //same as previous only for Xpath
         public  By byXpath(String xPath){
@@ -62,10 +57,10 @@ public abstract class ConciseAPI{
 //       // public static By by(String cssSelector){
 //            return byCss(cssSelector);
 //        }
-
+//
         //Takes By and returns a web element $(By.id("q"));
         public  WebElement $(By by){
-            return assertThat(ExpectedConditions.visibilityOfElementLocated(by));
+            return assertThat(ExpectedConditions.elementToBeClickable(by));
         }
 
         //Takes a String css selector and returns a WebElement $("cssSelector").click();
@@ -83,11 +78,12 @@ public abstract class ConciseAPI{
             return $$(By.cssSelector(cssSelector));
         }
 
-        WebElement $get(By listLocator, int index){
+        public WebElement $get(By listLocator, int index){
         return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
         }
 
 
+        // can Use it instead of assert but you have to give parametr ExpectedConditions.(find the mathching condition);
         public  <V> V assertThat(Function<? super WebDriver, V> condition){
             return wait.until(condition);
         }
