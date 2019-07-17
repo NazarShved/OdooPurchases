@@ -1,23 +1,30 @@
 package test;
 
+import com.pages.PurchasesPage;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import utilities.Driver;
+import utilities.ConciseAPI;
+import utilities.ConfigReader;
+import utilities.DriverSetup;
 
-public class BaseTest extends Driver{
+import java.sql.Driver;
+
+public class BaseTest extends ConciseAPI {
 
     @BeforeMethod
     public void setUp(){
-        Driver.goToPurchases();
+        PurchasesPage purchase = new PurchasesPage();
+        purchase.goToPurchases();
     }
 
     @AfterMethod
-    public void tearDown(){
-        Driver.quitDriver();
+    public void tearDown(){ DriverSetup.quitDriver();
     }
 
 
-
-
+    @Override
+    public WebDriver getWebDriver() {
+        return DriverSetup.getDriver();
+    }
 }

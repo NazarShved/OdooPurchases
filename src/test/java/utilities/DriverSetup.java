@@ -9,13 +9,16 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverSetup {
 
+    private DriverSetup(){
+
+    }
 
     private static WebDriver driver;
 
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            switch (ConfigReader.getProperty("browser")) {
+            switch (ConciseAPI.config.getProperty("browser")) {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
