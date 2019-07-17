@@ -12,7 +12,6 @@ public class Nazar extends BaseTest{
 @Test
 //#116 , #126
     public void searchFunctionalityTest(){
-    $$(".o_data_row").size();
     purchases.switchTab("Products");
     String testInput = config.getProperty("testSearchInput");
     purchases.search(testInput);
