@@ -80,6 +80,7 @@ public abstract class ConciseAPI{
 
         public WebElement $get(By listLocator, int index){
         return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
+
         }
 
 

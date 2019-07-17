@@ -15,6 +15,7 @@ public class Nazar extends BaseTest{
     purchases.switchTab("Products");
     String testInput = config.getProperty("testSearchInput");
     purchases.search(testInput);
+
     //check if all list elements(search results) contain the searchable word
     assertThat(Conditions.textToBePresentInElementsLocatedIgnoreCase(byCss(".o_kanban_record_title"), testInput));
     //verify that a closable block containing a search value is present
