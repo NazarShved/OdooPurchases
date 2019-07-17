@@ -1,9 +1,6 @@
 package test;
 
-import org.openqa.selenium.By;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.Driver;
 
 public class Nazar extends BaseTest{
 
@@ -14,7 +11,8 @@ public class Nazar extends BaseTest{
     //$x("xPath")
     //x()
 
-    System.out.println($s(".o_data_row").size());
+    System.out.println($$(".o_data_row").size());
+
 }
 
 
