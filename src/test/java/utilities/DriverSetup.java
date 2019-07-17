@@ -7,16 +7,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class Driver {
-    
-    private Driver() {
+public class DriverSetup {
+
+    private DriverSetup(){
+
     }
 
     private static WebDriver driver;
 
+
     public static WebDriver getDriver() {
         if (driver == null) {
-            switch (Config.getProperty("browser")) {
+            switch (ConciseAPI.config.getProperty("browser")) {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
@@ -34,6 +36,7 @@ public class Driver {
     }
 
 
+
     public static void quitDriver() {
         if (driver != null) {
             driver.quit();
@@ -42,4 +45,6 @@ public class Driver {
 
 
     }
+
+
 }
