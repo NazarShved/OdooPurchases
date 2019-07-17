@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="3343a1d6-e0ed-4293-b321-1ca413fd2f4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SoftAssertionsClass/IntroSoftAssertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Nurlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/geeksOdooPurchases.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/DriverSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/DriverSetup.class" afterDir="false" />
+
     <list default="true" id="9b869439-fad3-4d02-9d79-5aef6d0b27cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -15,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConciseAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ConciseAPI.class" afterDir="false" />
+
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,6 +43,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
+
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/Aidana.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-187" />
+
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/Aigerim.java">
@@ -38,10 +67,22 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/Olha.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+
+        <entry file="file://$PROJECT_DIR$/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+
         <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -51,27 +92,103 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/Nurlan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConciseAPI.java">
+
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java">
+
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
               <caret line="37" column="89" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+                <element signature="e#1318#1319#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1515#1516#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1725#1726#0" expanded="true" />
+                <element signature="e#1842#1843#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#2111#2112#0" expanded="true" />
+                <element signature="e#2203#2204#0" expanded="true" />
+                <element signature="e#2349#2350#0" expanded="true" />
+                <element signature="e#2410#2411#0" expanded="true" />
+                <element signature="e#2757#2758#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2754#2755#0" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/SoftAssertionsClass/IntroSoftAssertion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" selection-end-line="24" />
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Conditions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+              </folding>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/Nazar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/DriverSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="30" column="101" selection-start-line="30" selection-start-column="101" selection-end-line="30" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
         <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConciseAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
@@ -81,15 +198,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Conditions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-599">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
         <entry file="file://$PROJECT_DIR$/config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -101,12 +240,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             <state relative-caret-position="270">
               <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="e#508#509#0" expanded="true" />
                 <element signature="e#553#554#0" expanded="true" />
               </folding>
+
             </state>
           </provider>
         </entry>
@@ -144,6 +288,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utilities/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/Nurlan.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SoftAssertionsClass/IntroSoftAssertion.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="954" />
+  </component>
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/Driver.java" />
@@ -161,12 +317,17 @@
       </list>
     </option>
   </component>
+
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+
+      <pane id="Scope" />
+
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,6 +375,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="geeks.odoo.purchases" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OdooPurchases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,8 +395,10 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="CatdeaLogs" />
+
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,6 +416,11 @@
       </list>
     </option>
   </component>
+
+  <component name="RunManager" selected="TestNG.Nurlan.checkFilterList">
+    <configuration name="Nurlan" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="geeks.odoo.purchases" />
+  <component name="RunManager" selected="TestNG.Nazar">
   <component name="RunManager" selected="TestNG.Aigerim.VendorBills">
     <configuration name="Aigerim.VendorBills" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="geeks.odoo.purchases" />
@@ -273,6 +449,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
+
+      <option name="MAIN_CLASS_NAME" value="test.Nurlan" />
       <option name="MAIN_CLASS_NAME" value="test.Nazar" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -281,8 +459,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Nazar.searchFunctionalityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeksOdooPurchases" />
+    <configuration name="Nurlan.checkFilterList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="geeks.odoo.purchases" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -290,8 +468,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.Nazar" />
-      <option name="METHOD_NAME" value="searchFunctionalityTest" />
+      <option name="MAIN_CLASS_NAME" value="test.Nurlan" />
+      <option name="METHOD_NAME" value="checkFilterList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -299,8 +477,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Nazar.smTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Nurlan.filterSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="geeks.odoo.purchases" />
+    <configuration name="Nazar.searchFunctionalityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="geeksOdooPurchases" />
+
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -308,8 +489,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
+
+      <option name="MAIN_CLASS_NAME" value="test.Nurlan" />
+      <option name="METHOD_NAME" value="filterSearch" />
+
       <option name="MAIN_CLASS_NAME" value="test.Nazar" />
-      <option name="METHOD_NAME" value="smTest" />
+      <option name="METHOD_NAME" value="searchFunctionalityTest" />
+
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Nurlan.searchFuntion" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="geeks.odoo.purchases" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Nurlan" />
+      <option name="METHOD_NAME" value="searchFuntion" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -319,8 +523,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Aigerim.VendorBills" />
-        <item itemvalue="TestNG.Nazar" />
+        <item itemvalue="TestNG.Nurlan.checkFilterList" />
+        <item itemvalue="TestNG.Nurlan" />
+        <item itemvalue="TestNG.Nurlan.searchFuntion" />
+        <item itemvalue="TestNG.Nurlan.filterSearch" />
+
+        <item itemvalue="TestNG.Aigerim.VendorBills
+            <item itemvalue="TestNG.Nazar" />
         <item itemvalue="TestNG.Nazar.searchFunctionalityTest" />
         <item itemvalue="TestNG.Nazar.smTest" />
       </list>
@@ -331,15 +540,86 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="3343a1d6-e0ed-4293-b321-1ca413fd2f4f" name="Default Changelist" comment="" />
+      <created>1563301757369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563301757369</updated>
       <changelist id="9b869439-fad3-4d02-9d79-5aef6d0b27cd" name="Default Changelist" comment="" />
       <created>1563304957315</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563304957315</updated>
+
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Nurlan_filterSearch - 2019.07.16 at 15h 53m 13s.xml">
+      <configuration name="Nurlan.filterSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_filterSearch - 2019.07.16 at 16h 51m 09s.xml">
+      <configuration name="Nurlan.filterSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_filterSearch - 2019.07.16 at 16h 53m 12s.xml">
+      <configuration name="Nurlan.filterSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_filterSearch - 2019.07.16 at 16h 55m 52s.xml">
+      <configuration name="Nurlan.filterSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_searchFuntion - 2019.07.16 at 17h 22m 36s.xml">
+      <configuration name="Nurlan.searchFuntion" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan - 2019.07.16 at 17h 23m 19s.xml">
+      <configuration name="Nurlan" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan - 2019.07.16 at 17h 44m 59s.xml">
+      <configuration name="Nurlan" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_checkFilterList - 2019.07.16 at 17h 45m 49s.xml">
+      <configuration name="Nurlan.checkFilterList" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_checkFilterList - 2019.07.16 at 17h 46m 58s.xml">
+      <configuration name="Nurlan.checkFilterList" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nurlan_checkFilterList - 2019.07.16 at 18h 00m 27s.xml">
+      <configuration name="Nurlan.checkFilterList" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="954" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7030162" visible="true" weight="0.25274727" />
+      <window_info id="Structure" order="1" sideWeight="0.29698375" side_tool="true" visible="true" weight="0.25274727" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32946634" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946634" />
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 41m 10s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 42m 58s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 46m 46s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 47m 22s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 47m 54s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_smTest - 2019.07.17 at 00h 54m 22s.xml">
+      <configuration name="Nazar.smTest" configurationId="TestNG" />
+    </history-entry>
+
     <history-entry file="Nazar - 2019.07.17 at 01h 06m 01s.xml">
       <configuration name="Nazar" configurationId="TestNG" />
     </history-entry>
@@ -384,12 +664,99 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21966206" />
+
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.04524887" />
+
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Aidana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Olha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Nazar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/DriverSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Nurlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven-2 Build" />
+
+     <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.14285715" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.22119816" />
@@ -527,6 +894,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ConciseAPI.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+
         <state relative-caret-position="193">
           <caret line="62" column="70" selection-start-line="62" selection-start-column="70" selection-end-line="62" selection-end-column="70" />
         </state>
@@ -542,7 +912,19 @@
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/src/test/java/SoftAssertionsClass/IntroSoftAssertion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/Conditions.java">
+
     <entry file="file://$PROJECT_DIR$/src/test/java/test/Aigerim.java">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />

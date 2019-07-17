@@ -78,8 +78,14 @@ public abstract class ConciseAPI{
             return $$(By.cssSelector(cssSelector));
         }
 
+<<<<<<< HEAD:src/test/java/utilities/Driver.java
+        //Makes a WebDriverWait return a WebElement dont use it
+        private static  <V> V assertThat(Function<? super WebDriver, V> condition){
+            return (new WebDriverWait(getDriver(), 7)).until(condition);
+=======
         public WebElement $get(By listLocator, int index){
         return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
+>>>>>>> origin/master:src/test/java/utilities/ConciseAPI.java
         }
 
 
