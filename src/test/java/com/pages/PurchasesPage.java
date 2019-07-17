@@ -35,6 +35,7 @@ public class PurchasesPage extends BasePage {
     public  void goToPurchases(){
         visit();
         login();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
         $get(By.className("oe_menu_text"),8).click();
     }
 }
