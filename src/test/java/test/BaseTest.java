@@ -12,6 +12,8 @@ import java.sql.Driver;
 
 public class BaseTest extends ConciseAPI {
 
+    public PurchasesPage purchases = new PurchasesPage();
+
     @BeforeMethod
     public void setUp(){
         PurchasesPage purchase = new PurchasesPage();

@@ -7,9 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="geeks.odoo.purchases" />
-
->>>>>>> a53b8585228deff76efeb927c9068c6a75f83c7a
->>>>>>> d8a48bf4c7c77b56acce7c031376557619e7b74c
+        <module name="geeksOdooPurchases" />
       </profile>
     </annotationProcessing>
   </component>
