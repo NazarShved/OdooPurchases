@@ -87,7 +87,7 @@ public  class Driver extends DriverSetup {
 
         //Makes a WebDriverWait return a WebElement dont use it
         private static  <V> V assertThat(Function<? super WebDriver, V> condition){
-            return (new WebDriverWait(getDriver(), 5)).until(condition);
+            return (new WebDriverWait(getDriver(), 7)).until(condition);
         }
 // What the heck
 }
