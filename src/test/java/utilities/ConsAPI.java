@@ -70,7 +70,7 @@ public abstract class ConsAPI {
 
     //Returns a list of elements found by the inputed By
     public  List<WebElement> $$(By by){
-        return assertThat(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+        return getWebDriver().findElements(by);
     }
 
     //Returns a list of elements by css selector inputed as a string

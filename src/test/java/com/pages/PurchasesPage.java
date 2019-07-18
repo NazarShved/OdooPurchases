@@ -9,7 +9,8 @@ import utilities.Conditions;
 import java.util.List;
 
 public class PurchasesPage extends BasePage {
-    public By searchField = By.cssSelector(".o_searchview_input");
+    public By searchField = byCss(".o_searchview_input");
+    public By searchOptinsTab = byCss(".btn-group.o_search_options");
 
     //Clicks on the inputed tab from the menu to the right CaseSensitive
     public void switchTab(String tab){
@@ -26,8 +27,9 @@ public class PurchasesPage extends BasePage {
     //Runs a search for the inputed word
     public void search(String input){
         $(searchField).clear();
-        $(searchField).sendKeys(input, Keys.ENTER);
-        wait.until(Conditions.textToBePresentInElementLocatedIgnoreCase(byCss(".o_kanban_record_title"), input));
+        $(searchField).sendKeys(input);
+        $(searchField).sendKeys(Keys.ENTER);
+        wait.until(Conditions.listSizeIsAtLeast(byCss(".o_data_row"), 30));
     }
 
     //opens website logs in, and navigates to purchases module
@@ -36,5 +38,12 @@ public class PurchasesPage extends BasePage {
         login();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
         $get(By.className("oe_menu_text"),8).click();
+
+        wait.until(Conditions.listSizeIsAtLeast(byCss(".o_data_row"), 50));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+    }
+
+    public void showHideSearchFilters(){
+        $("[title = 'Advanced Search...']").click();
     }
 }
