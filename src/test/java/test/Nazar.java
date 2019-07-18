@@ -4,8 +4,11 @@ import com.github.javafaker.Faker;
 import com.pages.PurchasesPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Conditions;
+
+import java.util.List;
 
 public class Nazar extends BaseTest{
 
@@ -25,14 +28,22 @@ public class Nazar extends BaseTest{
 
     @Test
     public void dropDownTest(){
+
         //#126 As a manager I should be able to search the product by its name.
         WebElement advencedSearchOptions = getWebDriver().findElement(purchases.searchOptinsTab);
-        if (!advencedSearchOptions.isDisplayed())
-             purchases.showHideSearchFilters();
+        if (!advencedSearchOptions.isDisplayed()) purchases.showHideSearchFilters();
         assertThat(ExpectedConditions.visibilityOf(advencedSearchOptions));
         purchases.showHideSearchFilters();
         assertThat(ExpectedConditions.invisibilityOf(advencedSearchOptions));
 
+    }
+
+    @Test
+    public void kanbanListTest() {
+            purchases.resultsAsCanban();
+            Assert.assertTrue($$(purchases.resultsInList).size()==0);
+            purchases.resultsAsList();
+            Assert.assertTrue($$(purchases.resultsInCanban).size()==0);
     }
     
 }

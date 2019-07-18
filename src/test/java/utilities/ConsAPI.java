@@ -86,6 +86,7 @@ public abstract class ConsAPI {
 
     // can Use it instead of assert but you have to give parametr ExpectedConditions.(find the mathching condition);
     public  <V> V assertThat(Function<? super WebDriver, V> condition){
+
         return wait.until(condition);
     }
 
