@@ -26,6 +26,8 @@ public class PurchasesPage extends BasePage {
         }
     }
 
+    //Here will be next method
+
     //Runs a search for the inputed word
     public void search(String input){
         $(searchField).clear();
