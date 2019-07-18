@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b8eaa43-bd64-43b8-9254-29b966071c89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Nazar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Nazar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ConsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ConsAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Nazar.class" afterDir="false" />
@@ -318,9 +314,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nazar_dropDownTest - 2019.07.17 at 22h 56m 24s.xml">
-      <configuration name="Nazar.dropDownTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Nazar_dropDownTest - 2019.07.17 at 22h 57m 36s.xml">
       <configuration name="Nazar.dropDownTest" configurationId="TestNG" />
     </history-entry>
@@ -346,6 +339,9 @@
       <configuration name="Nazar.dropDownTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Nazar_dropDownTest - 2019.07.17 at 23h 16m 49s.xml">
+      <configuration name="Nazar.dropDownTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Nazar_dropDownTest - 2019.07.17 at 23h 34m 14s.xml">
       <configuration name="Nazar.dropDownTest" configurationId="TestNG" />
     </history-entry>
   </component>
