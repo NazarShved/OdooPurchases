@@ -9,9 +9,10 @@ import utilities.Conditions;
 
 public class Nazar extends BaseTest{
 
-@Test
-//#116 , #126
+    @Test
     public void searchFunctionalityTest(){
+    //Input an acceptable word to the search field and press Enter #116
+
     purchases.switchTab("Products");
     String testInput = config.getProperty("testSearchInput");
     purchases.search(testInput);
@@ -22,5 +23,16 @@ public class Nazar extends BaseTest{
     assertThat(Conditions.textToBePresentInElementLocatedIgnoreCase(byXpath("(//*[@class = 'o_facet_values']/span)[2]"), testInput));
 }
 
+    @Test
+    public void dropDownTest(){
+        //#126 As a manager I should be able to search the product by its name.
+        WebElement advencedSearchOptions = getWebDriver().findElement(purchases.searchOptinsTab);
+        if (!advencedSearchOptions.isDisplayed())
+             purchases.showHideSearchFilters();
+        assertThat(ExpectedConditions.visibilityOf(advencedSearchOptions));
+        purchases.showHideSearchFilters();
+        assertThat(ExpectedConditions.invisibilityOf(advencedSearchOptions));
 
+    }
+    
 }
