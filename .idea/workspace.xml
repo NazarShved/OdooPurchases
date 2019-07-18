@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e1e04e0-88ae-43eb-9be5-07f5ff4a1b58" name="Default Changelist" comment="Aidana's comment">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5b8eaa43-bd64-43b8-9254-29b966071c89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/Aidana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Aidana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/geeksOdooPurchases.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
