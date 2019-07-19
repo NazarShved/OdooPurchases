@@ -9,7 +9,10 @@ import utilities.Conditions;
 import java.util.List;
 
 public class PurchasesPage extends BasePage {
-    public By searchField = byCss(".o_searchview_input");
+    public By searchField = By.cssSelector(".o_searchview_input");
+    public By createButton = byXpath("//button[@class='btn btn-primary btn-sm o_list_button_add']");
+    public By saveButton = byCss(".btn.btn-primary.btn-sm.o_form_button_save");
+    public By dropDownSuggestionBlock = byCss(".ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content");
     public By searchOptinsTab = byCss(".btn-group.o_search_options");
     public By resultsInCanban = byCss(".oe_kanban_global_click.o_kanban_record");
     public By resultsInList = byCss(".o_data_row");
@@ -68,5 +71,17 @@ public class PurchasesPage extends BasePage {
     public void resultsAsList(){
         $("[aria-label='list']").click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+    }
+
+    public void pickADateCalendar(By calendarLocator, String month, int date){
+        $(calendarLocator).click();
+        wait.until(ExpectedConditions.visibilityOf($get(byCss(".table-condensed"), 2)));
+        while (true){
+            if($(".picker-switch").getText().toLowerCase().contains(month.toLowerCase())){
+                break;
+            }
+            else $get(byCss(".fa.fa-chevron-right"), 3).click();
+        }
+        $get(byXpath("//*[@data-action = 'selectDay']"), date-1).click();
     }
 }

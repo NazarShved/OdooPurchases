@@ -5,18 +5,22 @@ import com.pages.PurchasesPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.Conditions;
+import utilities.DriverSetup;
 
 import java.util.List;
 
 public class Nazar extends BaseTest{
 
-    @Test
+
+    @Test(priority = 2)
     public void searchFunctionalityTest(){
     //Input an acceptable word to the search field and press Enter #116
 
-    purchases.switchTab("Products");
+    //purchases.switchTab("Products");
     String testInput = config.getProperty("testSearchInput");
     purchases.search(testInput);
 
@@ -26,7 +30,7 @@ public class Nazar extends BaseTest{
     assertThat(Conditions.textToBePresentInElementLocatedIgnoreCase(byXpath("(//*[@class = 'o_facet_values']/span)[2]"), testInput));
 }
 
-    @Test
+    @Test(priority = 1)
     public void dropDownTest(){
         //#126 Display/Hide advanced search options
 
@@ -38,7 +42,7 @@ public class Nazar extends BaseTest{
 
     }
 
-    @Test
+    @Test(priority = 3)
     public void kanbanListTest() {
         //Display results in Canban or list view
 

@@ -2,6 +2,7 @@ package utilities;
 
 import com.google.common.base.Function;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -88,6 +89,12 @@ public abstract class ConsAPI {
     public  <V> V assertThat(Function<? super WebDriver, V> condition){
 
         return wait.until(condition);
+    }
+
+    public void inputToAfield(By by, String text) throws InterruptedException {
+        $(by).sendKeys(text);
+      Thread.sleep(1000);
+        $(by).sendKeys(Keys.ENTER);
     }
 
 }
