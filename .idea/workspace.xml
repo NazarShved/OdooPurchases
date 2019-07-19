@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e1e04e0-88ae-43eb-9be5-07f5ff4a1b58" name="Default Changelist" comment="Aidana's method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1e1e04e0-88ae-43eb-9be5-07f5ff4a1b58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/test/Aidana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Aidana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/Aidana.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="510">
+              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,7 +136,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="131" />
-    <option name="width" value="1224" />
+    <option name="width" value="1309" />
     <option name="height" value="869" />
   </component>
   <component name="ProjectView">
@@ -275,8 +275,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Aidana.checkTheStatusOfItem" />
-        <item itemvalue="TestNG.Aidana" />
         <item itemvalue="TestNG.Aidana.sortIncomingProductsByStatus" />
+        <item itemvalue="TestNG.Aidana" />
       </list>
     </recent_temporary>
   </component>
@@ -326,46 +326,53 @@
       <option name="project" value="LOCAL" />
       <updated>1563492952503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aidana's method">
+      <created>1563503566151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563503566151</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Aidana - 2019.07.18 at 16h 12m 38s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana - 2019.07.18 at 16h 16m 47s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 16h 40m 33s.xml">
-      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana - 2019.07.18 at 16h 48m 49s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana - 2019.07.18 at 16h 51m 36s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana - 2019.07.18 at 16h 53m 41s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 16h 54m 45s.xml">
-      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana - 2019.07.18 at 21h 10m 39s.xml">
-      <configuration name="Aidana" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Aidana_checkTheStatusOfItem - 2019.07.18 at 21h 26m 42s.xml">
+    <history-entry file="Aidana_checkTheStatusOfItem - 2019.07.18 at 22h 40m 59s.xml">
       <configuration name="Aidana.checkTheStatusOfItem" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Aidana_checkTheStatusOfItem - 2019.07.18 at 21h 27m 30s.xml">
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 48m 10s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 54m 03s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 54m 49s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 55m 27s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 56m 12s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 22h 56m 42s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 23h 02m 17s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_sortIncomingProductsByStatus - 2019.07.18 at 23h 02m 56s.xml">
+      <configuration name="Aidana.sortIncomingProductsByStatus" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Aidana_checkTheStatusOfItem - 2019.07.18 at 23h 05m 40s.xml">
       <configuration name="Aidana.checkTheStatusOfItem" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="131" y="0" width="1224" height="869" extended-state="0" />
+    <frame x="131" y="0" width="1309" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20389171" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1902131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -374,12 +381,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925372" weight="0.32947233" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925372" visible="true" weight="0.054054055" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32947233" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32947233" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074625" side_tool="true" weight="0.32947233" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925372" weight="0.32947233" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49925372" weight="0.32947233" />
@@ -516,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/Aidana.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+        <state relative-caret-position="510">
+          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
