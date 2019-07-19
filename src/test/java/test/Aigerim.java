@@ -27,15 +27,15 @@ public class Aigerim extends BaseTest {
         $(".btn.btn-primary.btn-sm.o-kanban-button-new").click();
         // creating contactName
         String inp = config.getProperty("contactName");
-        $x("//input[@id='o_field_input_495']").sendKeys(inp);
+        $x("(//input[@class='o_field_char o_field_widget o_input o_required_modifier'])[2]").sendKeys(inp);
         // locating titleLink
         $get(byCss(".o_input.ui-autocomplete-input"), 14).click();
         // selecting IT title
         $get(byCss(".ui-menu-item"), 6).click();
         // typing phoneNumber
-        $x("//input[@id='o_field_input_499']").sendKeys(config.getProperty("phoneNumber"));
+        $x("(//input[@class='o_field_phone o_field_widget o_input'])[3]").sendKeys(config.getProperty("phoneNumber"));
         // making note for a new contact
-        $x("//textarea[@id='o_field_input_501']").sendKeys(config.getProperty("note"));
+        $x("(//textarea[@class='o_field_text o_field_widget o_input'])[2]").sendKeys(config.getProperty("note"));
         // selecting save & close button
         $x("(//button[@class='btn btn-sm btn-primary'])[1]").click();
 

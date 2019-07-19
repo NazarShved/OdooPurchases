@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Shvednazar994/Desktop/geeksOdooPurchases/src/test/java/test">
+        <classes>
+            <class name="test.Aigerim">
+
+            </class>
+            <class name="test.Nazar">
+            </class>
+            <class name="test.Nurlan">
+
+            </class>
+        </classes>
+    </test>
+</suite>

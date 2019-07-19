@@ -7,24 +7,26 @@ import org.testng.annotations.BeforeMethod;
 import utilities.ConsAPI;
 import utilities.DriverSetup;
 
+import java.sql.Driver;
+
 public class BaseTest extends ConsAPI {
 
-    public  PurchasesPage purchases = new PurchasesPage();
+    public PurchasesPage purchases;
 
     @BeforeMethod
-    public void setUp() {
-        PurchasesPage purchase = new PurchasesPage();
-        purchase.goToPurchases();
+    public void setUp(){
+        purchases = new PurchasesPage();
+        purchases.goToPurchases();
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(){
         DriverSetup.quitDriver();
     }
 
 
     @Override
     public WebDriver getWebDriver() {
-       return DriverSetup.getDriver();
+        return DriverSetup.getDriver();
     }
 }

@@ -20,7 +20,7 @@ public class Nazar extends BaseTest{
     public void searchFunctionalityTest(){
     //Input an acceptable word to the search field and press Enter #116
 
-    //purchases.switchTab("Products");
+    purchases.switchTab("Products");
     String testInput = config.getProperty("testSearchInput");
     purchases.search(testInput);
 
