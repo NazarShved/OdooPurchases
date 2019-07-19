@@ -1,7 +1,6 @@
 package utilities;
 
 import com.google.common.base.Function;
-import com.pages.PurchasesPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
