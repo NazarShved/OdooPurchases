@@ -7,8 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import utilities.ConsAPI;
 import utilities.DriverSetup;
 
-import java.sql.Driver;
-
 public class BaseTest extends ConsAPI {
 
     public PurchasesPage purchases = new PurchasesPage();

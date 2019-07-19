@@ -29,7 +29,7 @@ public class Nazar extends BaseTest{
     @Test
     public void dropDownTest(){
 
-        //#126 As a manager I should be able to search the product by its name.
+        //#126 Display/Hide advanced search options
         WebElement advencedSearchOptions = getWebDriver().findElement(purchases.searchOptinsTab);
         if (!advencedSearchOptions.isDisplayed()) purchases.showHideSearchFilters();
         assertThat(ExpectedConditions.visibilityOf(advencedSearchOptions));
