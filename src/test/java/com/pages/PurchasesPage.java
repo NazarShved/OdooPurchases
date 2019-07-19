@@ -32,8 +32,13 @@ public class PurchasesPage extends BasePage {
         $(searchField).sendKeys(input);
         $(searchField).sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
-        if($$(resultsInCanban).size() == 0) wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInList));
-        else wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInCanban));
+
+            if ($$(resultsInCanban).size() > 0)
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInCanban));
+
+            else if($$(resultsInList).size() > 0)
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInList));
+
     }
 
     //opens website logs in, and navigates to purchases module
