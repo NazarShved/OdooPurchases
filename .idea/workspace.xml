@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="a4f3bc22-6a9f-49bf-a70a-f474aa273587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/test/Kadir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Kadir.java" afterDir="false" />
@@ -225,6 +226,10 @@
       </method>
     </configuration>
     <configuration name="Kadir.addNewVendorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager">
+    <configuration name="Olha.createVendorBillTest" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>> d6126cf22ec74d279f8351d29457220dc5302822
       <module name="geeks.odoo.purchases" />
       <extension name="coverage">
         <pattern>
@@ -233,8 +238,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="test.Kadir" />
       <option name="METHOD_NAME" value="addNewVendorTest" />
+=======
+      <option name="MAIN_CLASS_NAME" value="test.Olha" />
+      <option name="METHOD_NAME" value="createVendorBillTest" />
+>>>>>>> d6126cf22ec74d279f8351d29457220dc5302822
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -244,6 +254,7 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="TestNG.Kadir" />
         <item itemvalue="TestNG.Kadir.addNewVendorTest" />
       </list>
@@ -400,4 +411,10 @@
       </provider>
     </entry>
   </component>
+=======
+        <item itemvalue="TestNG.Olha.createVendorBillTest" />
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> d6126cf22ec74d279f8351d29457220dc5302822
 </project>
