@@ -26,7 +26,17 @@ public class PurchasesPage extends BasePage {
         }
     }
 
-    //Here will be next method
+    //Clicks on "Status" tab and sorts according to the product's status
+    public void switchToSortTab(String tab){
+        List<WebElement> sideTabs =  $$(".o_column_sortable");
+        for (WebElement el: sideTabs){
+            if(el.getText().equals(tab)){
+                el.click();
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+                break;
+            }
+        }
+    }
 
     //Runs a search for the inputed word
     public void search(String input){
