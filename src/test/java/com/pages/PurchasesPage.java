@@ -26,14 +26,26 @@ public class PurchasesPage extends BasePage {
         }
     }
 
+    //Clicks on "Status" tab and sorts according to the product's status
+    public void switchToSortTab(String tab){
+        List<WebElement> sideTabs =  $$(".o_column_sortable");
+        for (WebElement el: sideTabs){
+            if(el.getText().equals(tab)){
+                el.click();
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+                break;
+            }
+        }
+    }
+
     //Runs a search for the inputed word
     public void search(String input){
         $(searchField).clear();
         $(searchField).sendKeys(input);
         $(searchField).sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
-        if($$(resultsInCanban).size() == 0) wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInList));
-        else wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInCanban));
+//        if($$(resultsInCanban).size() == 0) wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInList));
+//        else wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInCanban));
     }
 
     //opens website logs in, and navigates to purchases module
