@@ -1,5 +1,6 @@
 package test;
 
+import com.google.common.base.Function;
 import com.pages.PurchasesPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -11,12 +12,12 @@ import java.sql.Driver;
 
 public class BaseTest extends ConsAPI {
 
-    public PurchasesPage purchases = new PurchasesPage();
+    public PurchasesPage purchases;
 
     @BeforeMethod
     public void setUp(){
-        PurchasesPage purchase = new PurchasesPage();
-        purchase.goToPurchases();
+        purchases = new PurchasesPage();
+        purchases.goToPurchases();
     }
 
     @AfterMethod

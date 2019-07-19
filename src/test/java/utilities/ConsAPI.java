@@ -1,6 +1,7 @@
 package utilities;
 
 import com.google.common.base.Function;
+import com.pages.PurchasesPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,9 +14,14 @@ import static utilities.Conditions.*;
 
 public abstract class ConsAPI {
 
+    public ConsAPI(){
+        config = new Config("config.properties");
+        wait = new WebDriverWait(getWebDriver(), 7);
+    }
+
     public abstract WebDriver getWebDriver();
-    public WebDriverWait wait = new WebDriverWait(getWebDriver(), 7);
-    public static Config config = new Config("config.properties");
+    public static WebDriverWait wait;
+    public static Config config;
 
     //Loggs in when on ligin page
     public void login(){
@@ -27,6 +33,7 @@ public abstract class ConsAPI {
     //opens an inputed website
     public void open(String url){
         getWebDriver().get(url);
+
     }
 
     //Navigates to our project Website
@@ -86,7 +93,6 @@ public abstract class ConsAPI {
 
     // can Use it instead of assert but you have to give parametr ExpectedConditions.(find the mathching condition);
     public  <V> V assertThat(Function<? super WebDriver, V> condition){
-
         return wait.until(condition);
     }
 
