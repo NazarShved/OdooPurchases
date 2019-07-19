@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a4ef412-06ad-46ec-bc25-724fe864dfb0" name="Default Changelist" comment="">
+    <list default="true" id="1a4ef412-06ad-46ec-bc25-724fe864dfb0" name="Default Changelist" comment="Merge branch 'master' of https://github.com/NazarShved/OdooPurchases&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;target/test-classes/com/pages/PurchasesPage.class&#10;#&#9;target/test-classes/test/Nurlan.class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/Aidana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Aidana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/Nurlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/Nurlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/pages/PurchasesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Aidana.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test/Nurlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/Nurlan.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+              <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2020#2021#0" expanded="true" />
@@ -39,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/Nurlan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="417">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="958" />
@@ -344,9 +345,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nurlan_checkSearchByWrongPO - 2019.07.18 at 19h 19m 57s.xml">
-      <configuration name="Nurlan.checkSearchByWrongPO" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Nurlan_checkSearchByWrongPO - 2019.07.18 at 19h 20m 51s.xml">
       <configuration name="Nurlan.checkSearchByWrongPO" configurationId="TestNG" />
     </history-entry>
@@ -374,9 +372,12 @@
     <history-entry file="Nurlan - 2019.07.18 at 19h 37m 57s.xml">
       <configuration name="Nurlan" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Nurlan - 2019.07.18 at 21h 28m 07s.xml">
+      <configuration name="Nurlan" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="958" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="956" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
@@ -388,13 +389,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31408775" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3136574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995381" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993895" visible="true" weight="0.3287037" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50061053" side_tool="true" weight="0.3287037" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290993" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.20092379" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -407,6 +408,10 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/NazarShved/OdooPurchases&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;target/test-classes/com/pages/PurchasesPage.class&#10;#&#9;target/test-classes/test/Nurlan.class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/NazarShved/OdooPurchases&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;target/test-classes/com/pages/PurchasesPage.class&#10;#&#9;target/test-classes/test/Nurlan.class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -495,7 +500,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/PurchasesPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2020#2021#0" expanded="true" />
@@ -520,8 +525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/Nurlan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="417">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

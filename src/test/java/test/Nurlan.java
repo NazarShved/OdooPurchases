@@ -27,10 +27,11 @@ public class Nurlan extends BaseTest {
         purchases.search(config.getProperty("note"));
 
         String text = (String)((JavascriptExecutor)getWebDriver()).executeScript("return document.getElementsByClassName(\"oe_view_nocontent\")[0].textContent");
-
         boolean expectedResult = text.contains("quotation is converted into a purchase order.");
 
         Assert.assertTrue(expectedResult, "Text Changed");
+
+        //
 
 
     }
