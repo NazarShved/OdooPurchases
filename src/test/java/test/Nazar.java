@@ -5,14 +5,18 @@ import com.pages.PurchasesPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.Conditions;
+import utilities.DriverSetup;
 
 import java.util.List;
 
 public class Nazar extends BaseTest{
 
-    @Test
+
+    @Test(priority = 2)
     public void searchFunctionalityTest(){
     //Input an acceptable word to the search field and press Enter #116
 
@@ -26,10 +30,10 @@ public class Nazar extends BaseTest{
     assertThat(Conditions.textToBePresentInElementLocatedIgnoreCase(byXpath("(//*[@class = 'o_facet_values']/span)[2]"), testInput));
 }
 
-    @Test
+    @Test(priority = 1)
     public void dropDownTest(){
+        //#126 Display/Hide advanced search options
 
-        //#126 As a manager I should be able to search the product by its name.
         WebElement advencedSearchOptions = getWebDriver().findElement(purchases.searchOptinsTab);
         if (!advencedSearchOptions.isDisplayed()) purchases.showHideSearchFilters();
         assertThat(ExpectedConditions.visibilityOf(advencedSearchOptions));
@@ -38,8 +42,10 @@ public class Nazar extends BaseTest{
 
     }
 
-    @Test
+    @Test(priority = 3)
     public void kanbanListTest() {
+        //Display results in Canban or list view
+
             purchases.resultsAsCanban();
             Assert.assertTrue($$(purchases.resultsInList).size()==0);
             purchases.resultsAsList();

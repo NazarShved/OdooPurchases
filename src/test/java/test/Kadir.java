@@ -9,7 +9,7 @@ import utilities.Conditions;
 public class Kadir extends BaseTest {
 
     @Test
-            public void addNewVendorTest() {
+    public void addNewVendorTest() {
         purchases.switchTab("Vendors");
         // locating create link
         $(".btn.btn-primary.btn-sm.o-kanban-button-new.btn-default").click();
@@ -17,10 +17,6 @@ public class Kadir extends BaseTest {
         $(".o_field_char.o_field_widget.o_input.o_required_modifier").sendKeys("Cybertek");
         //locating the Vendor Address
         $x("//input[@id='o_field_input_495']").sendKeys(config.getProperty("VendorAd"));
-
-
-
-
 
     }
 }

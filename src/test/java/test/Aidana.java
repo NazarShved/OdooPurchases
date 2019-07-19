@@ -41,8 +41,6 @@ public class Aidana extends BaseTest {
         int totalNumOfStatusValues = statusValues.size();
         //System.out.println("The total number of status values: " + totalNumOfStatusValues);
         int counter =0;
-
-        boolean statusIsDisplayed;
         for (WebElement statusValue : statusValues) {
             String statusText=statusValue.getText();
             counter++;
