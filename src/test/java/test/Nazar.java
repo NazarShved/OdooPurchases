@@ -28,8 +28,8 @@ public class Nazar extends BaseTest{
 
     @Test
     public void dropDownTest(){
-
         //#126 Display/Hide advanced search options
+
         WebElement advencedSearchOptions = getWebDriver().findElement(purchases.searchOptinsTab);
         if (!advencedSearchOptions.isDisplayed()) purchases.showHideSearchFilters();
         assertThat(ExpectedConditions.visibilityOf(advencedSearchOptions));
@@ -40,6 +40,8 @@ public class Nazar extends BaseTest{
 
     @Test
     public void kanbanListTest() {
+        //Display results in Canban or list view
+
             purchases.resultsAsCanban();
             Assert.assertTrue($$(purchases.resultsInList).size()==0);
             purchases.resultsAsList();
