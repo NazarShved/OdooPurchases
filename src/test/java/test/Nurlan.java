@@ -1,60 +1,38 @@
 package test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 public class Nurlan extends BaseTest {
 
-    @Test
-    public void searchFuntion() {
+    @Test(priority = 1)
+    public void checkSearchByPO()throws InterruptedException{
 
-        $x("//span[@class='o_searchview_more fa fa-search-plus']").click();
-        boolean actualFilter = $x("//span[@class='fa fa-filter']").isDisplayed();
-        boolean expectedFilter = true;
-        Assert.assertEquals(actualFilter, expectedFilter, "Filter in Advanced Search is NOT located!");
+    purchases.search(config.getProperty("PONumber"));
 
-        boolean groupBy = $x("//span[@class='fa fa-bars']").isDisplayed();
-        Assert.assertEquals(groupBy, expectedFilter, "Group By in Advanced Search is NOT located");
+    String actualPO = $x("(//td[@class='o_data_cell o_required_modifier'])[1]").getText();
 
-        boolean favorites = $x("//span[@class='fa fa-star']").isDisplayed();
-        Assert.assertEquals(favorites, expectedFilter, "Favorites in Advanced Search is NOT located");
+    String expectedPO = config.getProperty("PONumber");
+
+    Assert.assertEquals(actualPO,expectedPO, "No such PO number in the system");
+    }
+
+
+    @Test(priority = 2)
+
+    public void checkSearchByWrongPO(){
+
+        purchases.search(config.getProperty("note"));
+
+        String text = (String)((JavascriptExecutor)getWebDriver()).executeScript("return document.getElementsByClassName(\"oe_view_nocontent\")[0].textContent");
+        boolean expectedResult = text.contains("quotation is converted into a purchase order.");
+
+        Assert.assertTrue(expectedResult, "Text Changed");
+
+        //
 
 
     }
-
-   // @Test(dependsOnMethods = "searchFuntion")
-    public void checkFilterList() {
-        searchFuntion();
-        boolean filter = filterSearch();
-        boolean expectedFilter = true;
-        Assert.assertEquals(filter, expectedFilter, "Filter List is wrong");
-
-    }
-
-    public boolean filterSearch() {
-
-
-        $x("(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[3]").click();
-
-        List<WebElement> filters = $$(By.xpath("//ul[@class='dropdown-menu o_filters_menu']//a"));
-
-        System.out.println(filters);
-        System.out.println(filters.size());
-        if ((filters.size() == 11) && (filters.contains("Quotations") && filters.contains("Purchase Orders") &&
-                filters.contains("To Approve") && filters.contains("Waiting Bills") &&
-                filters.contains("Bills Received") && filters.contains("My Activities") &&
-                filters.contains("Unread Messages") && filters.contains("Late Activities") &&
-                filters.contains("Today Activities") && filters.contains("Future Activities")
-                && filters.contains("Add Custom Filter"))){
-            System.out.println(filters.size());
-            return true;
-        }
-        return false;
-
-    }
-
 }

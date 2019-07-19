@@ -10,15 +10,6 @@ import org.testng.annotations.Test;
 
 public class Olha extends BaseTest{
 
-    @Test
-    public void addItemButtonTest(){
-        purchases.switchTab("Vendor Bills");
-        $x("//button[@class='btn btn-primary btn-sm o_list_button_add']").click();
-        $(By.linkText("Add an item")).click();
-//        Alert alert = getWebDriver().switchTo().alert();
-//        alert.accept();
-//        Assert.assertTrue($(By.className("o_dialog_warning modal-body")).isDisplayed());
-    }
 
     @Test
     public void createVendorBillTest() throws InterruptedException {
@@ -37,7 +28,6 @@ public class Olha extends BaseTest{
         $x(purchases.saveButton).click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
         String result = $x("//td[@class='o_data_cell']").getText();
-        System.out.println(result);
         Assert.assertTrue(result.contains(itName));
     }
 }

@@ -13,6 +13,9 @@ public class PurchasesPage extends BasePage {
     public By createButton = byXpath("//button[@class='btn btn-primary btn-sm o_list_button_add']");
     public By saveButton = byCss(".btn.btn-primary.btn-sm.o_form_button_save");
     public By dropDownSuggestionBlock = byCss(".ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content");
+    public By searchOptinsTab = byCss(".btn-group.o_search_options");
+    public By resultsInCanban = byCss(".oe_kanban_global_click.o_kanban_record");
+    public By resultsInList = byCss(".o_data_row");
 
     //Clicks on the inputed tab from the menu to the right CaseSensitive
     public void switchTab(String tab){
@@ -26,11 +29,31 @@ public class PurchasesPage extends BasePage {
         }
     }
 
+    //Clicks on "Status" tab and sorts according to the product's status
+    public void switchToSortTab(String tab){
+        List<WebElement> sideTabs =  $$(".o_column_sortable");
+        for (WebElement el: sideTabs){
+            if(el.getText().equals(tab)){
+                el.click();
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+                break;
+            }
+        }
+    }
+
     //Runs a search for the inputed word
     public void search(String input){
         $(searchField).clear();
-        $(searchField).sendKeys(input, Keys.ENTER);
-        wait.until(Conditions.textToBePresentInElementLocatedIgnoreCase(byCss(".o_kanban_record_title"), input));
+        $(searchField).sendKeys(input);
+        $(searchField).sendKeys(Keys.ENTER);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+
+            if ($$(resultsInCanban).size() > 0)
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInCanban));
+
+            else if($$(resultsInList).size() > 0)
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(resultsInList));
+
     }
 
     //opens website logs in, and navigates to purchases module
@@ -39,6 +62,20 @@ public class PurchasesPage extends BasePage {
         login();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
         $get(By.className("oe_menu_text"),8).click();
+
+        wait.until(Conditions.listSizeIsAtLeast(byCss(".o_data_row"), 50));
+    }
+
+    public void showHideSearchFilters(){
+        $("[title = 'Advanced Search...']").click();
+    }
+    public void resultsAsCanban(){
+        $("[aria-label='kanban']").click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
+    }
+    public void resultsAsList(){
+        $("[aria-label='list']").click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
     }
 
     public void pickADateCalendar(By calendarLocator, String month, int date){

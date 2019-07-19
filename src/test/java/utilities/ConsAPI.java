@@ -71,7 +71,7 @@ public abstract class ConsAPI {
 
     //Returns a list of elements found by the inputed By
     public  List<WebElement> $$(By by){
-        return assertThat(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+        return getWebDriver().findElements(by);
     }
 
     //Returns a list of elements by css selector inputed as a string
@@ -87,6 +87,7 @@ public abstract class ConsAPI {
 
     // can Use it instead of assert but you have to give parametr ExpectedConditions.(find the mathching condition);
     public  <V> V assertThat(Function<? super WebDriver, V> condition){
+
         return wait.until(condition);
     }
 

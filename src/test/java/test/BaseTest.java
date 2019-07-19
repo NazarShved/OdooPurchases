@@ -20,7 +20,8 @@ public class BaseTest extends ConsAPI {
     }
 
     @AfterMethod
-    public void tearDown(){ DriverSetup.quitDriver();
+    public void tearDown(){
+        DriverSetup.quitDriver();
     }
 
 
