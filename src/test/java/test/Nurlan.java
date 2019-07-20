@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Nurlan extends BaseTest {
 
-    @Test(priority = 1)
+    @Test(groups = {"smokeTest"})
     public void checkSearchByPO()throws InterruptedException{
 
     purchases.search(config.getProperty("PONumber"));
@@ -17,10 +17,11 @@ public class Nurlan extends BaseTest {
     String expectedPO = config.getProperty("PONumber");
 
     Assert.assertEquals(actualPO,expectedPO, "No such PO number in the system");
+
     }
 
 
-    @Test(priority = 2)
+    @Test(groups = {"smokeTest"})
 
     public void checkSearchByWrongPO(){
 
@@ -30,9 +31,6 @@ public class Nurlan extends BaseTest {
         boolean expectedResult = text.contains("quotation is converted into a purchase order.");
 
         Assert.assertTrue(expectedResult, "Text Changed");
-
-        //
-
 
     }
 }

@@ -11,12 +11,11 @@ import org.testng.annotations.Test;
 public class Olha extends BaseTest{
 
 
-    @Test
+    @Test(groups = {"smokeTest"})
     public void createVendorBillTest() throws InterruptedException {
         purchases.switchTab("Vendor Bills");
         $x(purchases.createButton).click();
-        inputToAfield(byXpath("(//input[@class='o_input ui-autocomplete-input'])[1]"), "AB");
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(byCss(".ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content")));
+        inputToAfield(byXpath("(//input[@class='o_input ui-autocomplete-input'])[1]"), "ABCompany", byXpath("//*[@class='ui-menu-item ui-state-focus']"));
 
         purchases.pickADateCalendar(byXpath("//input[@name='date_invoice']"),"September", 9);
         purchases.pickADateCalendar(byXpath("//input[@name='date_due']"),"September", 15);
@@ -24,7 +23,7 @@ public class Olha extends BaseTest{
         $x("(//*[@class = 'o_field_x2many_list_row_add'])[1]/a").click();
 
         String itName = config.getProperty("itemName");
-        inputToAfield(byXpath("(//input[@class='o_input ui-autocomplete-input'])[4]"), itName);
+        inputToAfield(byXpath("(//input[@class='o_input ui-autocomplete-input'])[4]"), itName,  byXpath("//*[@class='ui-menu-item ui-state-focus']"));
         $x(purchases.saveButton).click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(byCss(".o_loading")));
         String result = $x("//td[@class='o_data_cell']").getText();

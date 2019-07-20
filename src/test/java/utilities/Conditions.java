@@ -1,6 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -74,11 +75,11 @@ public class Conditions {
             public Boolean apply(WebDriver input) {
                 WebElement check = input.findElement(elementLocator);
                 if(check.getText().toLowerCase().contains(text.toLowerCase())) return true;
-                    else{
-                        missmathc = check.getText();
-                        return false;
-                    }
+                else{
+                    missmathc = check.getText();
+                    return false;
                 }
+            }
 
             @Override
             public String toString() {
@@ -87,5 +88,28 @@ public class Conditions {
 
         };
     }
+
+    public static ExpectedCondition<Boolean> textToBePresentInInputFieldLocatedIgnoreCase(final String className, final int index, final String text){
+        return new ExpectedCondition<Boolean>() {
+            String missmathc = "";
+            public Boolean apply(WebDriver input) {
+                String actual = (String)((JavascriptExecutor)input).executeScript
+                        ("return document.getElementsByClassName('"+className+ "')[" + index+"].value;");
+                if(actual.toLowerCase().equals(text.toLowerCase())) return true;
+                else{
+                    missmathc = actual;
+                    return false;
+                }
+            }
+
+            @Override
+            public String toString() {
+                return String.format("String\"" + text + "\" to be present in element's text.\nActual text: \""+missmathc+"\"");
+            }
+
+        };
+    }
+
+
 
 }

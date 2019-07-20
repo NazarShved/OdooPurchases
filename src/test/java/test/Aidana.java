@@ -13,7 +13,7 @@ public class Aidana extends BaseTest {
     //Test cases #156
     //Checks if the items are sorted by their status from "Available" to "Waiting Availability" (or vice versa)
 
-    @Test
+    @Test(groups = {"smokeTest"})
     public void sortIncomingProductsByStatus() throws InterruptedException {
         purchases.switchTab("Incoming Products");
         purchases.switchToSortTab("Status");
@@ -34,7 +34,7 @@ public class Aidana extends BaseTest {
     //Test 162
     //Checks if ALL statusValues are displayed
 
-    @Test
+    @Test (groups = {"smokeTest"})
     public void checkTheStatusOfItem() {
         purchases.switchTab("Incoming Products");
         List<WebElement> statusValues = $$(byXpath("//td[@class='o_data_cell o_readonly_modifier']"));

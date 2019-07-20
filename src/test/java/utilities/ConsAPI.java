@@ -1,27 +1,31 @@
 package utilities;
 
 import com.google.common.base.Function;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.BaseTest;
 
 import java.util.List;
 
-import static utilities.Conditions.*;
-
 public abstract class ConsAPI {
+    public abstract WebDriver getWebDriver();
+    public static WebDriverWait wait;
+    public static Config config;
+    public static Logger log;
 
     public ConsAPI(){
         config = new Config("config.properties");
         wait = new WebDriverWait(getWebDriver(), 7);
+        log = LogManager.getLogger(ConsAPI.class.getName());
     }
 
-    public abstract WebDriver getWebDriver();
-    public static WebDriverWait wait;
-    public static Config config;
+
 
     //Loggs in when on ligin page
     public void login(){
@@ -33,6 +37,7 @@ public abstract class ConsAPI {
     //opens an inputed website
     public void open(String url){
         getWebDriver().get(url);
+        log.debug("fff");
 
     }
 
@@ -86,7 +91,7 @@ public abstract class ConsAPI {
     }
 
     public WebElement $get(By listLocator, int index){
-        return assertThat(listSizeIsAtLeast(listLocator, index + 1)).get(index);
+        return assertThat(Conditions.listSizeIsAtLeast(listLocator, index + 1)).get(index);
 
     }
 
@@ -98,8 +103,13 @@ public abstract class ConsAPI {
 
     public void inputToAfield(By by, String text) throws InterruptedException {
         $(by).sendKeys(text);
-      Thread.sleep(1000);
         $(by).sendKeys(Keys.ENTER);
     }
+
+    public void inputToAfield(By by, String text, By checkForVis){
+        $(by).sendKeys(text);
+        wait.until(ExpectedConditions.elementToBeClickable(checkForVis));
+        $(by).sendKeys(Keys.ENTER);
+}
 
 }
