@@ -1,22 +1,17 @@
 package test;
-
-import com.github.javafaker.Faker;
-import com.pages.PurchasesPage;
+import org.apache.logging.log4j.simple.SimpleLogger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.Conditions;
-import utilities.DriverSetup;
+import org.apache.logging.log4j.*;
 
-import java.util.List;
+
 
 public class Nazar extends BaseTest{
 
-
-    @Test(priority = 2)
+    @Test(groups = {"smokeTest"})
     public void searchFunctionalityTest(){
     //Input an acceptable word to the search field and press Enter #116
 
@@ -30,7 +25,7 @@ public class Nazar extends BaseTest{
     assertThat(Conditions.textToBePresentInElementLocatedIgnoreCase(byXpath("(//*[@class = 'o_facet_values']/span)[2]"), testInput));
 }
 
-    @Test(priority = 1)
+    @Test(groups = {"smokeTest"})
     public void dropDownTest(){
         //#126 Display/Hide advanced search options
 
@@ -42,7 +37,7 @@ public class Nazar extends BaseTest{
 
     }
 
-    @Test(priority = 3)
+    @Test(groups = {"smokeTest"})
     public void kanbanListTest() {
         //Display results in Canban or list view
 
@@ -51,5 +46,9 @@ public class Nazar extends BaseTest{
             purchases.resultsAsList();
             Assert.assertTrue($$(purchases.resultsInCanban).size()==0);
     }
-    
+
+    @Test
+    public void logtest(){
+        log.error("lal");
+    }
 }

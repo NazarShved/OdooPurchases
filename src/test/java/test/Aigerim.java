@@ -15,8 +15,9 @@ import utilities.DriverSetup;
 public class Aigerim extends BaseTest {
 
 
-    @Test
+    @Test(groups = {"smokeTest"})
     public void VendorBills() throws InterruptedException {
+        //Create new Contact in New Vendor tab
 
         purchases.switchTab("Vendors");
         // locating create link
